@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <hr><!-- hr tag it is used for creating a empty space line -->
+    <h4><p>Thank you for your interest in working with us.Please check below form for available
+        job application opportunities that meet your criteria and send your application by filling
+        out the Job Application Form Kindly apply if you are 100% sure.</p>
+    </h4>
+    <form method="get">
+
+        <b><label for="name">Name</label></b><br>
+        <input type="text" id="name" placeholder="First" autofocus autocomplete>
+        <input type="text" id="last" placeholder="Last"><br><br>
+
+        <b><label for="email">Email</label></b><br>
+        <input type="email" id="email" placeholder="Enter Email" required validate><br><br>
+        <div style="display:inline-block;">
+        <b><label>What position you are applying for?</label></b><br>
+    <select>
+        <option disabled selected>---Select---</option>
+        <option>Java Developer</option>
+        <option>Dot Net Developer</option>
+        <option>UI Developer</option>
+    </select>
+</div>
+<div style="display:inline-block;">
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+</div>
+<div style="display:inline-block;">
+    <b><label>Availabel Date</label></b><br>
+    <input type="date" id="date">
+</div>
+<br><br>
+
+<b><label for="employee">What is your current employement status?</label></b><br>
+<input type="radio" name="employee" value="employee">
+<label>Employed</label>
+<p style="display:inline-block;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+<input type="radio" name="employee" value="self-employeed">
+<label>Self-Employed</label><br>
+
+<input type="radio" name="employee" value="unemployed">
+<label>Unemployed</label>
+<p style="display:inline-block;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+<input type="radio" name="employee" value="student">
+<label>Student</label><br><br>
+<div style="display:inline-block;">
+<label>Please provide your resume link</label><br>
+<input type="url" id="url" validate placeholder="https://www.example.com">
+</div>
+
+<div style="display:inline-block;">
+<p>&nbsp&nbsp&nbsp&nbsp</p>
+</div>
+
+<div style="display:inline-block;">
+<label for="file">Please Upload Your resume</label>
+<input type="file" id="file" validate placeholder="Resume">
+</div>
+<br><br>
+
+<label for="reference">Do You Have References? (optional)</label><br>
+<input type="text" id="reference" name="first" placeholder="First">
+<input type="text" id="reference" name="last" placeholder="Last">
+<br><br>
+<label for="referencemail">Reference Email</label><br>
+<input type="email" id="referencemail" placeholder="Enter Email" validate>
+<br><br>
+<input type="reset" value="Reset">
+<input type="submit" value="Apply">
+    </form>   
+</body>
+</html>
